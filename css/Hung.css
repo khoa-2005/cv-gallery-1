@@ -55,26 +55,25 @@ ul {
     position: sticky; /* Sticky để cố định khi cuộn */
     top: 0;
     height: 100vh;
-    padding: 80px 40px;
+    padding: 80px 40x;
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Đẩy nội dung lên trên và xuống dưới */
     align-items: flex-start;
     /* border-right: 1px solid var(--border-color);  Đường viền phân cách */
-    padding-left: 60px; /* Thụt lề trái */
+    padding-left: 100px; /* Thụt lề trái */
        
-    margin-top: 0;
-    padding-top: 0;
+    
 }
 
 .sidebar-content {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 0px;
 }
 
 .sidebar-name {
-    font-size: 4.2rem; /* tiêu đề lớn hơn */
+    font-size: 0.5rem; /* tiêu đề lớn hơn */
     color: var(--text-light);
     line-height: 1.1;
     font-weight: 700;
@@ -82,20 +81,20 @@ ul {
 }
 
 .sidebar-tagline {
-    font-size: 1.6rem; /* tagline lớn hơn */
+    font-size: 0.5rem; /* tagline lớn hơn */
     color: var(--text-light);
     font-weight: 600;
 }
 
 .sidebar-nav .nav-list {
-    margin-top: 50px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
 .sidebar-nav .nav-link {
-    font-size: 1.1rem;
+    font-size: 0.6rem;
     font-weight: 600;
     color: var(--text-secondary);
     padding: 5px 0;
@@ -148,7 +147,7 @@ ul {
 }
 
 .sidebar-social a {
-    font-size: 1.8em;
+    font-size: 1em;
     color: var(--text-secondary);
     transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -177,7 +176,7 @@ ul {
 }
 
 .section-title {
-    font-size: 2.3rem;
+    font-size: 1rem;
     color: var(--text-light);
     font-weight: 700;
     margin-bottom: 40px;
@@ -194,9 +193,9 @@ ul {
 
 /* About Section */
 #about p {
-    font-size: 1.5rem;
+    font-size: 1.05rem;
     margin-bottom: 20px;
-    line-height: 1.7;
+    line-height: 1;
 }
 
 #about p a {
@@ -367,6 +366,8 @@ ul {
     filter: grayscale(100%) contrast(1) brightness(90%); /* Hiệu ứng ảnh xám */
     transition: filter 0.3s ease;
 }
+
+
 
 .project-image::before { /* Lớp phủ màu khi hover */
     content: '';
@@ -668,3 +669,27 @@ body {
 .cv-card { 
     background: #fff;
 }
+
+.profile-row {
+    display: flex;
+    align-items: center;
+    gap: 24px; /* khoảng cách giữa ảnh và chữ */
+}
+
+.profile-avatar {
+    width: 100px;      /* hoặc kích thước bạn muốn */
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info h1 {
+    font-size: 1.5rem; /* hoặc giá trị nhỏ hơn tuỳ ý */
+    margin: 0;
+}
+
+.profile-info p {
+    margin: 4px 0 0 0;
+    font-size: 1.1rem; /* chỉnh nhỏ lại nếu muốn */
+}
+
